@@ -112,12 +112,13 @@ Note that the package has only been tested with the `book` class.
 
 ### Options
 
-| Option         | Package `dnd`   | Class `dndbook`   |
-| -------------- | :-------------: | :---------------: |
-| `bg`           | ✓               | ✓                 |
-| `justified`    | ✓               | ✓                 |
-| `layout`       | ✓               |                   |
-| `nomultitoc`   | ✓               | ✓                 |
+| Option            | Package `dnd`   | Class `dndbook`   |
+| ----------------- | :-------------: | :---------------: |
+| `bg`              | ✓               | ✓                 |
+| `justified`       | ✓               | ✓                 |
+| `layout`          | ✓               |                   |
+| `nomultitoc`      | ✓               | ✓                 |
+| `noindentafterbox`| ✓               | ✓                 |
 
 The `dndbook` class also supports all the options of the `book` class.
 
