@@ -31,6 +31,7 @@
 \bool_new:N \l__dnd_multitoc_bool
 \bool_new:N \l__dnd_layout_bool
 \bool_new:N \l__dnd_no_deprecated_code_bool
+\bool_new:N \l__dnd_no_indent_after_box_bool
 
 \bool_set_true:N \l__dnd_multitoc_bool
 \bool_set_eq:NN \l__dnd_layout_bool \c__dnd_isclass_bool
@@ -81,6 +82,13 @@
         \bool_set_false:N \l__dnd_multitoc_bool
       },
     nomultitoc .value_forbidden:n = true,
+    
+    % Supress indent after a box
+    noindentafterbox .code:n =
+      {
+        \bool_set_true:N \l__dnd_no_indent_after_box_bool
+      },
+    noindentafterbox .value_forbidden:n = true,
 
     % Apply layout formatting
     %layout .bool_set:N       = \l__dnd_layout_bool,

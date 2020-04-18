@@ -63,7 +63,14 @@
 
     % Customize itemize environment.
     \setlist{leftmargin=1em}
-    \setitemize{noitemsep,topsep=0.5ex,label=\footnotesize{\bullet}}
+    \setitemize{noitemsep,topsep=0.5ex,label=\footnotesize{\textbullet}}
+    
+    % Stop indent after boxes
+    \bool_if:NF \l__dnd_no_indent_after_box_bool
+      {
+        \AfterEndEnvironment{DndReadAloud}{\noindent}
+        \AfterEndEnvironment{DndSidebar}  {\noindent}
+      }
   }
 
 % Load other modules of this package after all dependencies to avoid load order
