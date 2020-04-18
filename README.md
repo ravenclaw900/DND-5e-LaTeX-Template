@@ -149,6 +149,10 @@ This will change in a future release.
 
 Disable multi-column table of contents.
 
+#### `noindentafterbox`
+
+Stops the indent after `DndSidebar` and `DndReadAloud`.
+
 ## Dependencies
 
 If you don't have LaTeX installed, we recommend installing a complete [TeX Live distribution](https://www.tug.org/texlive/).
