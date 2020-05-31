@@ -27,7 +27,7 @@ _job: &job
         command: echo 'export PATH="/srv/texlive/bin/x86_64-linux:${PATH}"' >>$BASH_ENV
     - run:
         name: Compile document
-        command: make
+        command: cd src && make
 
 jobs:
   lint:
