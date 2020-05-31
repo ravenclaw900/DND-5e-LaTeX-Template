@@ -2,7 +2,7 @@
 
 LATEX ?= pdflatex
 
-all: example.pdf
+all: src/example.pdf
 
 clean:
 	latexmk -C
