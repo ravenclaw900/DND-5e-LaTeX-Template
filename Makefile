@@ -8,7 +8,7 @@ clean:
 	latexmk -C
 
 lint:
-	npx eclint check *.cls *.sty *.tex lib/
+	npx eclint check *.cls *.sty *.tex src/lib/
 
 %.pdf: %.tex
 	latexmk --interaction=nonstopmode --pdf --pdflatex=$(LATEX) $<
